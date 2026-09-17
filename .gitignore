@@ -1,0 +1,61 @@
+# ---------- 编译产物 ----------
+*.o
+*.ko
+*.mod
+*.mod.c
+*.symvers
+*.order
+*.a
+*.so
+*.d
+*.lo
+*.tmp
+
+# ---------- 构建目录 ----------
+build/
+out/
+dist/
+
+# ---------- 嵌入式产物 ----------
+*.dtb
+*.dtbo
+zImage
+uImage
+*.img
+
+# ---------- 大型依赖（内核 / U-Boot / 工具链 / rootfs 一律不入库）----------
+kernel/
+uboot/
+u-boot/
+toolchain/
+rootfs/
+*.tar
+*.tar.gz
+*.tar.xz
+*.tar.bz2
+
+# ---------- 编辑器 / IDE ----------
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+compile_commands.json
+.ccls-cache/
+
+# ---------- 系统与临时文件 ----------
+.DS_Store
+Thumbs.db
+*.log
+*.bak
+*.orig
+*.rej
+
+# ---------- 密钥与敏感信息 ----------
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+.env

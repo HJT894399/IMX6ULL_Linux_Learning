@@ -1,0 +1,29 @@
+# 统一换行符，避免 Windows / Linux 之间出现 CRLF 问题
+* text=auto eol=lf
+
+# 明确文本文件类型
+*.c        text eol=lf
+*.h        text eol=lf
+*.cpp      text eol=lf
+*.sh       text eol=lf
+*.md       text eol=lf
+*.txt      text eol=lf
+*.conf     text eol=lf
+*.dts      text eol=lf
+*.dtsi     text eol=lf
+Makefile   text eol=lf
+
+# 二进制文件不做换行符转换
+*.png      binary
+*.jpg      binary
+*.jpeg     binary
+*.gif      binary
+*.pdf      binary
+*.zip      binary
+*.gz       binary
+*.xz       binary
+*.bin      binary
+*.dtb      binary
+*.ko       binary
+*.img      binary
+*.o        binary
